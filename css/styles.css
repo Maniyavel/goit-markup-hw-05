@@ -157,8 +157,19 @@
    display: flex;
    gap: 50px;
  }
+  
+ /*Icons*/
+.icon-place{
+   max-width: 270px;
+   height: 120px;
+   background-color: #F5F4FA;
+   border-radius: 4px;
+   margin-bottom: 30px;
+}
 
- 
+
+
+
  
  /*Герой*/
  .hero-section{
@@ -332,6 +343,28 @@
  .team-picture{
   display: block;
   margin-bottom: 30px;
+ }
+
+ /*Клієнти*/
+
+ .clients-section-title{
+   color: var(--secondary-text-color);
+   text-align: center;
+   font-size: 36px;
+   line-height: 1.166;
+   font-weight: 700;
+   margin-bottom: 50px;
+ }
+
+ .clients-icon-place{
+   max-width: 170px;
+   height: 92px;
+   border: 1px solid#AFB1B8;
+ }
+
+ .team-icon-place{
+   max-width: 44px;
+   height: 44px;
  }
   
  /*Підвал*/
