@@ -54,6 +54,7 @@
    letter-spacing: 0.03em;
    font-weight: 400;
    background-color: var(--white-color);
+   max-width: 1600px;
    }
 
  .container {
@@ -159,19 +160,66 @@
  }
   
  /*Icons*/
+
+.contact-icons{
+   margin-right: 10px;
+}
+
+
 .icon-place{
    max-width: 270px;
    height: 120px;
    background-color: #F5F4FA;
    border-radius: 4px;
    margin-bottom: 30px;
+   display: flex;
+   justify-content: center;
+   padding-top: 25px;
+   
+}
+
+.team-icon-place {
+    max-width: 44px;
+    height: 44px;
+    display: flex;
+    
+    width: 44px;
+   
+ }
+
+ .team-icon-list{
+   display: flex;
+   justify-content: center;
+  
 }
 
 
 
+.client-icon-list{
+   display: flex;
+   justify-content: center;
+   
+}
+
+.client-item{
+   display: flex;
+   flex-basis: calc((100% - 5*30px) / 6);
+   
+   
+}
+
+.clients-icon-place{
+width: 170px;
+height: 92px;
+padding-top: 16px;
+
+}
+
+
 
  
- /*Герой*/
+
+/*Герой*/
  .hero-section{
    padding: 200px 0;
     height: 600px;
@@ -267,11 +315,7 @@
    flex-basis: calc((100% - 2*30px) / 3);
  }
 
- .advantages-item::before{
-   display: block;
-   content: '';
-   height: ;
- }
+ 
  
   /*Work*/
 
@@ -323,6 +367,7 @@
     font-size: 16px;
     line-height: 1.187;
     text-align: center;
+    margin-bottom: 16px;
    
  }
 
@@ -338,11 +383,23 @@
    gap: 30px;
 }
 
+.team-icon-place{
+   justify-content: center;
+   align-items: center;
+   background-color: darkkhaki;
+  
+   
+}
 
+.team-icon-item{
+flex-basis: calc((100% - 3*10px) / 4);
+
+}
 
  .team-picture{
   display: block;
   margin-bottom: 30px;
+
  }
 
  /*Клієнти*/
@@ -362,10 +419,7 @@
    border: 1px solid#AFB1B8;
  }
 
- .team-icon-place{
-   max-width: 44px;
-   height: 44px;
- }
+
   
  /*Підвал*/
 
@@ -390,6 +444,7 @@
     line-height: 1.714;
     padding-top: 60px;
     padding-bottom: 60px;
+    
  }
  
  .footer-contact{
@@ -413,10 +468,40 @@
    padding-right: 15px;
    margin-left: auto;
    margin-right: auto;
+   display: flex;
+   
    }
  
-  
- /*Сторінка портфоліо*/
+
+   .join{
+      color: var(--white-color);
+      text-transform: uppercase;
+      font-weight: 700px;
+      font-size: 14px;
+      line-height: 1.14;
+      margin-top: 12px;
+      margin-bottom: 20px;
+      
+   }
+
+   .join-social{
+      margin-left: 70px;
+   }
+
+  .join-list-icon{
+   display: flex;
+  }
+
+   .social-icon-place{
+      background-color: brown;
+      width: 44px;
+      height: 44px;
+      gap: 10px;
+      
+   }
+ 
+ 
+   /*Сторінка портфоліо*/
  
  
  .visually-hidden{
