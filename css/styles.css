@@ -163,6 +163,12 @@
 
 .contact-icons{
    margin-right: 10px;
+   fill: currentColor;
+}
+
+.contact-icons:hover, 
+.contact-icons:focus{
+ fill:#2196F3;
 }
 
 
@@ -178,46 +184,9 @@
    
 }
 
-.team-icon-place {
-    max-width: 44px;
-    height: 44px;
-    display: flex;
-    
-    width: 44px;
-   
- }
-
- .team-icon-list{
-   display: flex;
-   justify-content: center;
-  
-}
 
 
 
-.client-icon-list{
-   display: flex;
-   justify-content: center;
-   
-}
-
-.client-item{
-   display: flex;
-   flex-basis: calc((100% - 5*30px) / 6);
-   
-   
-}
-
-.clients-icon-place{
-width: 170px;
-height: 92px;
-padding-top: 16px;
-
-}
-
-
-
- 
 
 /*Герой*/
  .hero-section{
@@ -372,10 +341,12 @@ padding-top: 16px;
  }
 
  .team-item {
-    flex-basis: calc((100% - 3*30px) / 4);
+    
     background-color: var(--white-color);
     padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   
  }
 
  .team-list{
@@ -386,19 +357,46 @@ padding-top: 16px;
 .team-icon-place{
    justify-content: center;
    align-items: center;
-   background-color: darkkhaki;
-  
+   border-radius: 50%;
+   width: 44px;
+   height: 44px;
+   background-color: transparent;
+   border: none;
    
+   
+  
+}
+
+.team-icon-place:hover,
+.team-icon-place:focus {
+   background-color: #2196F3;
 }
 
 .team-icon-item{
 flex-basis: calc((100% - 3*10px) / 4);
+padding-left: 12px;
+
 
 }
 
  .team-picture{
   display: block;
   margin-bottom: 30px;
+
+ }
+
+ .team-icon-place {
+    max-width: 44px;
+    height: 44px;
+    display: flex;
+
+    width: 44px;
+
+ }
+
+ .team-icon-list {
+    display: flex;
+    justify-content: center;
 
  }
 
@@ -416,11 +414,46 @@ flex-basis: calc((100% - 3*10px) / 4);
  .clients-icon-place{
    max-width: 170px;
    height: 92px;
-   border: 1px solid#AFB1B8;
+   border: 1px solid rgba(175, 177, 184, 1);
+   padding-left: 32px;
+   padding-right: 32px;
+   padding-bottom: 16px;
+   padding-top: 16px;
+   cursor: pointer;
+   border-radius: 4px;
+   
+ }
+
+ .clients-icon-place:hover,
+ .clients-icon-place:focus {
+    border-color: #2196F3;
+ }
+
+ .client-icon-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+ }
+
+ .client-item {
+    display: flex;
+    flex-basis: calc((100% - 5*30px) / 6);
+}
+
+
+ .client-icon {
+    fill: #AFB1B8;
+ }
+
+ .client-icon:hover,
+ .client-icon:focus {
+    fill: #2196F3;
  }
 
 
-  
+
+
  /*Підвал*/
 
  .logo-footer-accent{
@@ -486,21 +519,43 @@ flex-basis: calc((100% - 3*10px) / 4);
 
    .join-social{
       margin-left: 70px;
+
    }
 
   .join-list-icon{
    display: flex;
+   gap: 10px;
+   
   }
 
    .social-icon-place{
-      background-color: brown;
+      align-items: center;
       width: 44px;
       height: 44px;
-      gap: 10px;
+      padding: 12px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+      cursor: pointer;
       
    }
+
+   .social-icon-place:hover,
+   .social-icon-place:focus{
+      background-color: #2196F3;
+   }
  
+       
+      .social-footer-icon{
+         fill: #FFFFFF;
+      }
  
+.social-icon {
+   fill: #AFB1B8;
+}
+
+
+
    /*Сторінка портфоліо*/
  
  
@@ -588,6 +643,11 @@ flex-basis: calc((100% - 3*10px) / 4);
  
  .portfolio-item{
    flex-basis width: calc((100% - 2*30px) / 3);
+ }
+
+ .portfolio-item:hover,
+ .portfolio-item:focus{
+   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
  }
 
  .portfolio-text{
