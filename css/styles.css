@@ -54,7 +54,7 @@
    letter-spacing: 0.03em;
    font-weight: 400;
    background-color: var(--white-color);
-   max-width: 1600px;
+   
    }
 
  .container {
@@ -141,8 +141,11 @@
     font-size: 14px;
     line-height: 1.142;
     text-decoration: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: currentColor;
+   
  }
  
  .contact-menu .header-contacts .current{
@@ -153,22 +156,20 @@
  .contact-menu .header-contacts:focus{
     color: var(--accent-color);
  }
+ 
 
  .contact-menu{
    display: flex;
    gap: 50px;
+   align-items: center;
+   justify-content: center;
+   
  }
   
  /*Icons*/
 
 .contact-icons{
    margin-right: 10px;
-   fill: currentColor;
-}
-
-.contact-icons:hover, 
-.contact-icons:focus{
- fill:#2196F3;
 }
 
 
@@ -180,7 +181,7 @@
    margin-bottom: 30px;
    display: flex;
    justify-content: center;
-   padding-top: 25px;
+   align-items: center;
    
 }
 
@@ -357,26 +358,18 @@
 .team-icon-place{
    justify-content: center;
    align-items: center;
-   border-radius: 50%;
+   
    width: 44px;
    height: 44px;
    background-color: transparent;
-   border: none;
    
    
-  
 }
 
-.team-icon-place:hover,
-.team-icon-place:focus {
-   background-color: #2196F3;
-}
 
 .team-icon-item{
 flex-basis: calc((100% - 3*10px) / 4);
 padding-left: 12px;
-
-
 }
 
  .team-picture{
@@ -385,19 +378,32 @@ padding-left: 12px;
 
  }
 
- .team-icon-place {
-    max-width: 44px;
-    height: 44px;
-    display: flex;
-
-    width: 44px;
-
- }
+ 
 
  .team-icon-list {
     display: flex;
     justify-content: center;
+    align-items: center;
+   
 
+ }
+
+ .social-link{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   fill: #AFB1B8;
+   border: none;
+   
+ }
+
+ .social-link:hover,
+ .social-link:focus{
+  background-color: var(--accent-color);
+   fill: var(--white-color);
  }
 
  /*Клієнти*/
@@ -412,22 +418,28 @@ padding-left: 12px;
  }
 
  .clients-icon-place{
-   max-width: 170px;
+   width: 170px;
    height: 92px;
+}
+
+ .client-icon-nav {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   align-items: center;
+   justify-content: center;
    border: 1px solid rgba(175, 177, 184, 1);
-   padding-left: 32px;
-   padding-right: 32px;
-   padding-bottom: 16px;
-   padding-top: 16px;
-   cursor: pointer;
    border-radius: 4px;
-   
+   cursor: pointer;
+   fill: #AFB1B8;
  }
 
- .clients-icon-place:hover,
- .clients-icon-place:focus {
-    border-color: #2196F3;
- }
+ .client-icon-nav:hover,
+ .client-icon-nav:focus{
+   fill: var(--accent-color);
+}
+
+
 
  .client-icon-list {
     display: flex;
@@ -437,19 +449,13 @@ padding-left: 12px;
  }
 
  .client-item {
-    display: flex;
     flex-basis: calc((100% - 5*30px) / 6);
 }
 
 
- .client-icon {
-    fill: #AFB1B8;
- }
+ 
 
- .client-icon:hover,
- .client-icon:focus {
-    fill: #2196F3;
- }
+ 
 
 
 
@@ -512,13 +518,14 @@ padding-left: 12px;
       font-weight: 700px;
       font-size: 14px;
       line-height: 1.14;
-      margin-top: 12px;
+      
       margin-bottom: 20px;
       
    }
 
    .join-social{
       margin-left: 70px;
+      padding: 10px;
 
    }
 
@@ -554,7 +561,10 @@ padding-left: 12px;
    fill: #AFB1B8;
 }
 
-
+.social-icon:hover,
+.social-icon:focus{
+   fill: #FFFFFF;
+}
 
    /*Сторінка портфоліо*/
  
