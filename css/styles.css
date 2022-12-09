@@ -435,15 +435,11 @@ padding-left: 12px;
 
  .client-icon-nav:hover,
  .client-icon-nav:focus{
-   fill: #2196F3;
- }
-
-.client-item:hover,
-.client-item:focus {
    fill: var(--accent-color);
    border: 1px solid rgba(33, 150, 243, 1);
-   
-}
+ }
+
+
 
  .client-icon-list {
     display: flex;
@@ -529,7 +525,7 @@ padding-left: 12px;
 
    .join-social{
       margin-left: 70px;
-      padding: 10px;
+      padding-top: 10px;
 
    }
 
