@@ -659,6 +659,11 @@ padding-left: 12px;
    pointer-events: none;
 }
 
+.backdrop.is-hidden .modal{
+   
+transform: translate(-50%, -50%) scale(0) rotateZ(180deg);
+}
+
 .modal{
   background-color: var(--white-color);
   width: 100%;
