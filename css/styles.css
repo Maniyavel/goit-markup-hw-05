@@ -118,7 +118,8 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 3px;
+  height: 4px;
+  border-radius: 2px;
   background-color: var(--accent-color);
   display: block;
   left: 0;
@@ -703,6 +704,43 @@ padding-left: 12px;
  
  .portfolio-item{
    flex-basis width: calc((100% - 2*30px) / 3);
+
+ }
+
+ .portfolio-card-overlay{
+position: relative;
+overflow: hidden;
+ }
+
+ 
+
+ .overlay-text{
+   position: absolute;
+   background-color: rgba(33, 150, 243, 0.9);
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   transform: translateY(100%);
+   transition: transform 250ms;
+   
+}
+
+ .portfolio-item:hover .overlay-text{
+   transform: translateY(0%);
+   
+   
+ }
+
+
+ .otherside-text{
+   color: var(--white-color);
+   font-size: 18px;
+      line-height: 1.555;
+      padding-top: 63px;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-bottom: 24px;
  }
 
  .portfolio-item:hover,
